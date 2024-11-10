@@ -47,9 +47,10 @@ class Welcome extends Component {
 						</div>
 						<Button 
 							className={"BannerButton"}
-							onClick={() => {console.log("TODO")}}>
+							onClick={() => {window.open("https://github.com/dawoodwasif/EcoLens", "_blank")}}>
 								{messages_en.welcomeBanner1Btn}
 						</Button>
+
 					</div>
 				</div>
 				<div className={"BannerWrapperWelcome2"}>
