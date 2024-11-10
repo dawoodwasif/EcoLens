@@ -348,7 +348,7 @@ app.post("/api/gpt-company-data", async (req, res) => {
           A JSON example:
           {
             "companyName": "Coca Cola",
-            "mainScoreLink": "https://www.sustainalytics.com/esg-rating/the-coca-cola-co/1007904888",
+            "mainScoreLink": " ",
             "mainScore": 22.5,
             "climate": "A-",
             "water": "A",

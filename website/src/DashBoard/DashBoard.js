@@ -199,7 +199,7 @@ const DashBoard = (props) => {
 							<LineChart data={monthlySustainabilityData}>
 								<CartesianGrid strokeDasharray="3 3" />
 								<XAxis dataKey="month" label={{ value: 'Month', position: 'insideBottom', offset: -5 }} />
-								<YAxis label={{ value: 'Average Sustainability Score', angle: -90, position: 'insideLeft', dy: 40 }} />
+								<YAxis label={{ value: 'Average Sustainability Score', angle: -90, position: 'insideLeft', dy: 80 }} />
 								<Tooltip />
 								<Line type="monotone" dataKey="score" stroke="#8884d8" activeDot={{ r: 8 }} />
 							</LineChart>
