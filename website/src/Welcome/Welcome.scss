@@ -1,0 +1,190 @@
+@import 'carbon-components/scss/globals/scss/vendor/@carbon/elements/scss/type/_styles.scss';
+// @import '~carbon-components/scss/globals/scss/styles.scss';
+// uncomment above to be able to use color variables
+
+
+.HeaderGradient {
+  @include carbon--type-style('expressive-heading-06');
+  color: white; //$ui-background;
+  // width: 100%;
+  background: linear-gradient( 135deg, #289449, #9fd0c1);
+  padding: 160px; //was 220px
+  // border-bottom-right-radius: 200px;
+  // border-bottom-left-radius: 50% 40%;
+  border-bottom-right-radius: 50% 40%;
+  margin-bottom:40px;
+
+  max-width: 45%;
+  text-align: left;
+  font-size: 3rem;
+}
+@media (max-width: 1000px) {
+  .HeaderGradient {
+    padding: 135px;
+  }
+}
+@media (max-width: 850px) {
+  .HeaderGradient {
+    padding: 110px;
+  }
+}
+@media (max-width: 400px) {
+  .HeaderGradient {
+    padding: 50px;
+  }
+}
+
+@media (max-width: 850px) {
+  .Phone_Graphic_Handle{
+    margin-top:220px;
+  }
+}
+@media (max-width: 500px) {
+  .Phone_Graphic_Handle{
+    margin-top:140px;
+  }
+}
+
+.ImageWrapper{
+    position: absolute;
+    top: 180px;
+    // left: calc(50% - 400px);
+    left: calc(50% - 150px);
+}
+
+.WelcomeImage{
+  svg {
+    // width: 800px !important;
+    width: 900px !important;
+  }
+}
+
+.ApplicationName{
+  @include carbon--type-style('expressive-heading-04');
+  color: white;
+  margin-bottom: 40px;
+
+  text-align: left;
+}
+
+.CommunityWrapper {
+  max-width: 550px;
+  // margin-left: 250px;
+  margin-left: 160px;
+  font-weight: 600;
+  color: #61b789;
+  font-size: 46px;
+  margin-top: 120px;
+  text-align: left;
+}
+
+.BannerWrapperFirst {
+  margin-top: 120px;
+}
+
+.BannerWrapperWelcome {
+  width: 100%;
+  padding: 80px;
+  background-color: #e6f1eb;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.BannerWrapperWelcome2 {
+  width: 100%;
+  padding: 80px;
+  background-color: white;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.BannerWrapperWelcome3{
+  width: 100%;
+  padding: 80px;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  background-color: rgb(243, 243, 243);
+}
+
+.BannerLeft {
+  width: 50%;
+  max-width: 50%;
+}
+.BannerLeftText {
+  width: 50%;
+  max-width: 50%;
+  padding-left: 80px;
+}
+
+.BannerRight {
+  width: 50%;
+  max-width: 50%;
+}
+
+.BannerRight1Header {
+  font-weight: 600;
+  color: #61b789;
+  font-size: 46px;
+  text-align: left;
+  padding-right: 60px;
+}
+
+.BannerRight1SubText {
+  font-weight: 300;
+  color: #232323;
+  font-size: 22px;
+  text-align: left;  
+  padding-top: 16px;
+  margin-bottom: 40px;
+}
+
+.BannerButton {
+  background-color: #289449;
+  display: block;
+}
+
+.Banner1Img {
+  padding-left:10px;
+  width: 400px;
+  height: 400px;
+  padding-top: -40px;
+  margin-top: -120px;
+}
+
+.Banner2Img {
+  margin-top: -30px;
+  width: 400px;
+  height: 400px;
+  padding-top: -40px;
+  margin-left: -150px;
+}
+
+.Banner3Img {
+  max-width: 1000px;
+}
+
+.Banner3RightText {
+  margin-left: 130px;
+}
+
+.bx--progress-label {
+  white-space: break-spaces;
+  max-width: 180px;
+  width: 180px;
+}
+
+.bx--progress-step {
+  width: 180px;
+}
+
+.bx--progress-line {
+  width: 180px;
+  background-color: #289449 !important;
+}
+
+.bx--progress-step svg {
+  fill: #289449;
+}

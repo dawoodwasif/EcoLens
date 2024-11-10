@@ -1,0 +1,330 @@
+  .loading{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    font-family: "Poppins", "sans-serif";
+  }
+  * {
+    font-family: 'Roboto', sans-serif;
+  }
+
+  body{
+    font-family: "Arial";
+    background: linear-gradient(359.28deg, #D8E6AF 4.1%, rgba(255, 255, 255, 0.25) 96.86%);
+    transition: 0.5s;
+    height: 450px;
+    width: 350px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 28px;
+  }
+
+  .skill{
+    width: 120px;
+    height: 120px;
+  }
+
+  .outer{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    padding: 20px;
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15), -6px -6px 10px -1px rgba(255,255,255,0.7);
+  }
+
+  .inner{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #number{
+    font-weight: 600px;
+    color: #555;
+  }
+
+  circle{
+    fill: none;
+    stroke: #89C73A;
+    stroke-width: 10px; 
+    stroke-dasharray: 472; /*full is 472*/
+    stroke-dashoffset: 472;
+    animation: anim 1s linear forwards;
+  }
+
+  svg{
+    position: absolute;
+    top: 70px;
+    left: 100px;
+  }
+  svg:hover {
+    cursor: pointer;
+  }
+  
+  @keyframes anim{
+  100%{
+      stroke-dashoffset: 0;
+    }
+  }
+
+span {
+    font-size: 20px;
+    font-family: 'Comfortaa', cursive;
+  }
+  #sustainable {
+    font-size: 14px;
+    position: absolute;
+    top: 180px;
+    left: 135px;
+  }
+  .main-circle {
+    top: 70px;
+    position:absolute;
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+    line-height: 160px;
+    border-radius: 50%;
+    font-size: 50px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    z-index: -1000;
+    left: 80px;
+    font-weight: 700;
+  }
+  .smallcircletext{
+    display: flex;
+    font-size: 20px;
+    color: black;
+    text-align: center;
+  }
+  .smaller-circle {
+    width: 75px;
+    height: 75px;
+    line-height: 75px;
+    border-radius: 50%;
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    background: #14213D;
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15);
+    backdrop-filter: blur(5px);
+    font-weight: 550;
+  }
+
+  .circle-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10rem;
+  }
+  .circle-container-2 {
+    display: flex;
+    justify-content: space-around;
+  }
+  /* .main-data {
+    display: none;
+  } */
+  .SearchBar{
+    width: 95%;
+    height: 45px;
+    position: absolute;
+    background: rgba(130, 130, 130, 0.21);
+    backdrop-filter: blur(5px);
+    /* backdrop-filter: blur(4px); */
+    /* Note: backdrop-filter has minimal browser support */
+    border: 1px solid #E8e8e8;
+    border-radius: 5px;
+  }
+
+  .imgSearch {
+    /* display: flex; */
+    position: absolute;
+    right: 0;
+    align-content: flex-end;
+    margin-top: .2rem;
+    /* margin-left: .5rem; */
+    margin-right: .7rem;
+    z-index: 2;
+  }
+
+  button{
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  h1 {
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    font-family: 'Comfortaa', cursive;
+  }
+
+  .hello{
+    border-radius: 50%;
+    position: absolute;
+    width: 147px;
+    height: 147px;
+  
+    background: rgba(225, 225, 225, 0.5);
+  
+    border: 1.5px solid #E8e8e8;
+    box-sizing: border-box;
+  
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(4px);
+    z-index: -9999;
+    top: 78px;
+    left: 107px;
+  }
+  .infoButton{
+    display: none;
+    background-color: #4476ff;
+    border: none;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .warning {
+    display:flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 0.5rem;
+  }
+  #warning-text {
+    margin-top: 10px;
+  }
+  p {
+    font-size: 16px;
+  }
+
+
+  /* Chat Button */
+.chatButton {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.chatButton:hover {
+  padding-top: 15px;
+  background-color: #45a049;
+}
+
+/* Chatbox Container */
+.chatContainer {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 300px;
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+  font-family: 'Roboto', sans-serif;
+}
+
+.chatHeader {
+  background-color: #4CAF50;
+  color: white;
+  padding: 5px 10px; /* Smaller padding for a compact header */
+  font-size: 14px; /* Smaller font size for the header */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.closeChat {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 18px; /* Slightly larger font for "X" to make it more clickable */
+  cursor: pointer;
+  font-weight: bold;
+  padding: 0; /* Remove default padding for a compact look */
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%; /* Circular style for the button */
+  transition: background 0.2s ease;
+}
+
+.closeChat:hover {
+  background-color: rgba(255, 255, 255, 0.3); /* Lighten background on hover */
+}
+
+.chatMessages {
+  padding: 10px;
+  height: 200px;
+  overflow-y: auto;
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+  color: #14213D;
+}
+
+.chatInput {
+  width: 80%;
+  padding: 10px;
+  border: none;
+  border-top: 1px solid #ccc;
+}
+
+.sendChat {
+  width: 20%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.sendChat:hover {
+  background-color: #45a049;
+}
+
+ /* Chat and Buy Buttons */
+ .chatButton, .buyButton {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effects for both buttons */
+.chatButton:hover, .buyButton:hover {
+  background-color: #45a049;
+}
+
+/* Buy Button pressed style */
+.buyButton.clicked {
+  background-color: #006400; /* Dark green */
+}
+
+ /* Container for Chat and Buy Buttons */
+ .button-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%; /* Ensure full width of the container */
+}
